@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse_lazy
 
 
 class Menu(models.Model):
@@ -14,3 +15,16 @@ class Menu(models.Model):
 
     def __str__(self):
         return self.title
+
+    def save(self):
+        url = "-".join(self.get_parents()) + self.title
+        self.url = reverse_lazy("index", kwargs={"url": url})
+        super(Menu, self).save()
+
+    def get_parents(self):
+        if self.parent:
+            return self.parent.get_parents() + [self.parent.title]
+        return []
+
+    def get_children(self):
+        return self.child.all()
