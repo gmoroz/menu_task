@@ -5,4 +5,4 @@ from .models import Menu
 @admin.register(Menu)
 class MenuAdmin(admin.ModelAdmin):
     list_display = ("title", "parent")
-    exclude = ("url",)
+    readonly_fields = ("url",)

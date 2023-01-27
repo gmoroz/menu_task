@@ -25,8 +25,8 @@ class Menu(models.Model):
         return self.title
 
     def save(self):
-        parents = [parent.title for parent in self.get_parents()]
-        url = "-".join(parents + [self.title])
+        parents = [parent.title.lower() for parent in self.get_parents()]
+        url = "-".join(parents + [self.title.lower()])
         self.url = reverse_lazy("menu", kwargs={"url": url})
         super(Menu, self).save()
 
