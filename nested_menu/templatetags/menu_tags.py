@@ -19,3 +19,9 @@ def draw_menu(context, menu_title):
             parent.id for parent in active_menu.get_parents()
         ] + [active_menu.id]
     return context
+
+
+@register.inclusion_tag("tree_menu.html", takes_context=True)
+def draw_children_menu(context, menu_id):
+    context["menu"] = get_object_or_404(Menu, pk=menu_id)
+    return context
