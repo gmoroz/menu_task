@@ -3,9 +3,9 @@
 {% if menu.get_children %}
 <a href="{{ menu.url }}"><b>{{ menu.title }}</b></a>
 <details {% if menu.id in expanded_menus %} open {% endif %}>
+    {% for child in menu.get_children %}
   <summary></summary>
-  {% for child in menu.get_children %}
-  <div>{% draw_children_menu child.id %}</div>
+  <div class="dropdown-content">{% draw_children_menu child.id %}</div>
   {% endfor %}
 </details>
 {% else %}

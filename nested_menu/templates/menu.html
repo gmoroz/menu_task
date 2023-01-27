@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% load menu_tags %}
+    {% load static %} {% load menu_tags %}
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
+    <style>
+      .dropdown-content a {
+        color: black;
+        padding: 12px 30px;
+        text-decoration: none;
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    {% draw_menu 'httpmethods' %}
     {% draw_menu 'baseexception' %}
   </body>
 </html>
