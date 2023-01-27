@@ -1,0 +1,578 @@
+[
+  {
+    "model": "nested_menu.menu",
+    "pk": 17,
+    "fields": {
+      "title": "BaseException",
+      "url": "/baseexception/",
+      "parent": null
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 18,
+    "fields": {
+      "title": "SystemExit",
+      "url": "/baseexception-systemexit/",
+      "parent": 17
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 19,
+    "fields": {
+      "title": "KeyboardInterrupt",
+      "url": "/baseexception-keyboardinterrupt/",
+      "parent": 17
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 20,
+    "fields": {
+      "title": "GeneratorExit",
+      "url": "/baseexception-generatorexit/",
+      "parent": 17
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 21,
+    "fields": {
+      "title": "Exception",
+      "url": "/baseexception-exception/",
+      "parent": 17
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 22,
+    "fields": {
+      "title": "StopIteration",
+      "url": "/baseexception-exception-stopiteration/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 23,
+    "fields": {
+      "title": "StopAsyncIteration",
+      "url": "/baseexception-exception-stopasynciteration/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 24,
+    "fields": {
+      "title": "ArithmeticError",
+      "url": "/baseexception-exception-arithmeticerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 25,
+    "fields": {
+      "title": "FloatingPointError",
+      "url": "/baseexception-exception-arithmeticerror-floatingpointerror/",
+      "parent": 24
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 26,
+    "fields": {
+      "title": "OverflowError",
+      "url": "/baseexception-exception-arithmeticerror-overflowerror/",
+      "parent": 24
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 27,
+    "fields": {
+      "title": "ZeroDivisionError",
+      "url": "/baseexception-exception-arithmeticerror-zerodivisionerror/",
+      "parent": 24
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 28,
+    "fields": {
+      "title": "AssertionError",
+      "url": "/baseexception-exception-assertionerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 29,
+    "fields": {
+      "title": "AttributeError",
+      "url": "/baseexception-exception-attributeerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 30,
+    "fields": {
+      "title": "BufferError",
+      "url": "/baseexception-exception-buffererror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 31,
+    "fields": {
+      "title": "EOFError",
+      "url": "/baseexception-exception-eoferror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 32,
+    "fields": {
+      "title": "ImportError",
+      "url": "/baseexception-exception-importerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 33,
+    "fields": {
+      "title": "ModuleNotFoundError",
+      "url": "/baseexception-exception-importerror-modulenotfounderror/",
+      "parent": 32
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 34,
+    "fields": {
+      "title": "LookupError",
+      "url": "/baseexception-exception-lookuperror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 35,
+    "fields": {
+      "title": "IndexError",
+      "url": "/baseexception-exception-lookuperror-indexerror/",
+      "parent": 34
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 36,
+    "fields": {
+      "title": "KeyError",
+      "url": "/baseexception-exception-lookuperror-keyerror/",
+      "parent": 34
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 37,
+    "fields": {
+      "title": "MemoryError",
+      "url": "/baseexception-exception-memoryerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 38,
+    "fields": {
+      "title": "NameError",
+      "url": "/baseexception-exception-nameerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 39,
+    "fields": {
+      "title": "UnboundLocalError",
+      "url": "/baseexception-exception-nameerror-unboundlocalerror/",
+      "parent": 38
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 40,
+    "fields": {
+      "title": "OSError",
+      "url": "/baseexception-exception-oserror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 41,
+    "fields": {
+      "title": "BlockingIOError",
+      "url": "/baseexception-exception-oserror-blockingioerror/",
+      "parent": 40
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 42,
+    "fields": {
+      "title": "ChildProcessError",
+      "url": "/baseexception-exception-oserror-childprocesserror/",
+      "parent": 40
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 43,
+    "fields": {
+      "title": "ConnectionError",
+      "url": "/baseexception-exception-oserror-connectionerror/",
+      "parent": 40
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 44,
+    "fields": {
+      "title": "BrokenPipeError",
+      "url": "/baseexception-exception-oserror-connectionerror-brokenpipeerror/",
+      "parent": 43
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 45,
+    "fields": {
+      "title": "ConnectionAbortedError",
+      "url": "/baseexception-exception-oserror-connectionerror-connectionabortederror/",
+      "parent": 43
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 46,
+    "fields": {
+      "title": "ConnectionRefusedError",
+      "url": "/baseexception-exception-oserror-connectionerror-connectionrefusederror/",
+      "parent": 43
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 47,
+    "fields": {
+      "title": "ConnectionResetError",
+      "url": "/baseexception-exception-oserror-connectionerror-connectionreseterror/",
+      "parent": 43
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 48,
+    "fields": {
+      "title": "FileExistsError",
+      "url": "/baseexception-exception-oserror-fileexistserror/",
+      "parent": 40
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 49,
+    "fields": {
+      "title": "FileNotFoundError",
+      "url": "/baseexception-exception-oserror-filenotfounderror/",
+      "parent": 40
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 50,
+    "fields": {
+      "title": "InterruptedError",
+      "url": "/baseexception-exception-oserror-interruptederror/",
+      "parent": 40
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 51,
+    "fields": {
+      "title": "IsADirectoryError",
+      "url": "/baseexception-exception-oserror-isadirectoryerror/",
+      "parent": 40
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 52,
+    "fields": {
+      "title": "NotADirectoryError",
+      "url": "/baseexception-exception-oserror-notadirectoryerror/",
+      "parent": 40
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 53,
+    "fields": {
+      "title": "PermissionError",
+      "url": "/baseexception-exception-oserror-permissionerror/",
+      "parent": 40
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 54,
+    "fields": {
+      "title": "ProcessLookupError",
+      "url": "/baseexception-exception-oserror-processlookuperror/",
+      "parent": 40
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 55,
+    "fields": {
+      "title": "TimeoutError",
+      "url": "/baseexception-exception-oserror-timeouterror/",
+      "parent": 40
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 56,
+    "fields": {
+      "title": "ReferenceError",
+      "url": "/baseexception-exception-referenceerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 57,
+    "fields": {
+      "title": "RuntimeError",
+      "url": "/baseexception-exception-runtimeerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 58,
+    "fields": {
+      "title": "NotImplementedError",
+      "url": "/baseexception-exception-runtimeerror-notimplementederror/",
+      "parent": 57
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 59,
+    "fields": {
+      "title": "RecursionError",
+      "url": "/baseexception-exception-runtimeerror-recursionerror/",
+      "parent": 57
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 60,
+    "fields": {
+      "title": "SyntaxError",
+      "url": "/baseexception-exception-syntaxerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 61,
+    "fields": {
+      "title": "IndentationError",
+      "url": "/baseexception-exception-syntaxerror-indentationerror/",
+      "parent": 60
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 62,
+    "fields": {
+      "title": "TabError",
+      "url": "/baseexception-exception-syntaxerror-indentationerror-taberror/",
+      "parent": 61
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 63,
+    "fields": {
+      "title": "SystemError",
+      "url": "/baseexception-exception-systemerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 64,
+    "fields": {
+      "title": "TypeError",
+      "url": "/baseexception-exception-typeerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 65,
+    "fields": {
+      "title": "ValueError",
+      "url": "/baseexception-exception-valueerror/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 66,
+    "fields": {
+      "title": "UnicodeError",
+      "url": "/baseexception-exception-valueerror-unicodeerror/",
+      "parent": 65
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 67,
+    "fields": {
+      "title": "UnicodeDecodeError",
+      "url": "/baseexception-exception-valueerror-unicodeerror-unicodedecodeerror/",
+      "parent": 66
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 68,
+    "fields": {
+      "title": "UnicodeEncodeError",
+      "url": "/baseexception-exception-valueerror-unicodeerror-unicodeencodeerror/",
+      "parent": 66
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 69,
+    "fields": {
+      "title": "UnicodeTranslateError",
+      "url": "/baseexception-exception-valueerror-unicodeerror-unicodetranslateerror/",
+      "parent": 66
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 70,
+    "fields": {
+      "title": "Warning",
+      "url": "/baseexception-exception-warning/",
+      "parent": 21
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 71,
+    "fields": {
+      "title": "DeprecationWarning",
+      "url": "/baseexception-exception-warning-deprecationwarning/",
+      "parent": 70
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 72,
+    "fields": {
+      "title": "PendingDeprecationWarning",
+      "url": "/baseexception-exception-warning-pendingdeprecationwarning/",
+      "parent": 70
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 73,
+    "fields": {
+      "title": "RuntimeWarning",
+      "url": "/baseexception-exception-warning-runtimewarning/",
+      "parent": 70
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 74,
+    "fields": {
+      "title": "SyntaxWarning",
+      "url": "/baseexception-exception-warning-syntaxwarning/",
+      "parent": 70
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 75,
+    "fields": {
+      "title": "UserWarning",
+      "url": "/baseexception-exception-warning-userwarning/",
+      "parent": 70
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 76,
+    "fields": {
+      "title": "FutureWarning",
+      "url": "/baseexception-exception-warning-futurewarning/",
+      "parent": 70
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 77,
+    "fields": {
+      "title": "ImportWarning",
+      "url": "/baseexception-exception-warning-importwarning/",
+      "parent": 70
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 78,
+    "fields": {
+      "title": "UnicodeWarning",
+      "url": "/baseexception-exception-warning-unicodewarning/",
+      "parent": 70
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 79,
+    "fields": {
+      "title": "BytesWarning",
+      "url": "/baseexception-exception-warning-byteswarning/",
+      "parent": 70
+    }
+  },
+  {
+    "model": "nested_menu.menu",
+    "pk": 80,
+    "fields": {
+      "title": "ResourceWarning",
+      "url": "/baseexception-exception-warning-resourcewarning/",
+      "parent": 70
+    }
+  }
+]

@@ -1,7 +1,7 @@
 {% load menu_tags %}
 
 {% if menu.get_children %}
-<a href="{{ menu.url }}"><b>{{ menu.title }}</b></a>
+<a href="{{ menu.url }}"><b>{{ "---- " | get_hyphens:menu }}{{ menu.title }}</b></a>
 <details {% if menu.id in expanded_menus %} open {% endif %}>
     {% for child in menu.get_children %}
   <summary></summary>
@@ -9,5 +9,5 @@
   {% endfor %}
 </details>
 {% else %}
-<a href="{{ menu.url }}">{{ menu.title }}</a>
+<a href="{{ menu.url }}">{{ "---- " | get_hyphens:menu }}{{ menu.title }}</a>
 {% endif %}

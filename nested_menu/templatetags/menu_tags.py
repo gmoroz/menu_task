@@ -25,3 +25,8 @@ def draw_menu(context, menu_title):
 def draw_children_menu(context, menu_id):
     context["menu"] = get_object_or_404(Menu, pk=menu_id)
     return context
+
+
+@register.filter
+def get_hyphens(string, menu):
+    return string * len(menu.get_parents())
