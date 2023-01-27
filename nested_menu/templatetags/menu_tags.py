@@ -8,7 +8,7 @@ register = template.Library()
 
 @register.inclusion_tag("tree_menu.html", takes_context=True)
 def draw_menu(context, menu_title):
-    context["menu"] = get_object_or_404(Menu, title=menu_title, parent=None)
+    context["menu"] = get_object_or_404(Menu, title__iexact=menu_title, parent=None)
     request_url = context["request"].path
     try:
         active_menu = Menu.objects.get(url=request_url)

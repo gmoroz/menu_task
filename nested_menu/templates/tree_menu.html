@@ -1,0 +1,13 @@
+{% load menu_tags %}
+
+{% if menu.get_children %}
+<a href="{{ menu.url }}"><b>{{ menu.title }}</b></a>
+<details {% if menu.id in expanded_menus %} open {% endif %}>
+  <summary></summary>
+  {% for child in menu.get_children %}
+  <div>{% draw_children_menu child.id %}</div>
+  {% endfor %}
+</details>
+{% else %}
+<a href="{{ menu.url }}">{{ menu.title }}</a>
+{% endif %}
