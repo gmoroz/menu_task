@@ -14,6 +14,7 @@ class Menu(models.Model):
         blank=True,
         default=None,
         related_name="child",
+        verbose_name="Родительское меню"
     )
 
     class Meta:
@@ -24,7 +25,8 @@ class Menu(models.Model):
         return self.title
 
     def save(self):
-        self.url = "-".join(self.get_parents()) + self.title
+        url = "-".join(self.get_parents() + [self.title])
+        self.url = reverse_lazy("index", kwargs={"url": url})
         super(Menu, self).save()
 
     def get_parents(self):
