@@ -3,7 +3,7 @@ from django.urls import reverse_lazy
 
 
 class Menu(models.Model):
-    title = models.CharField(max_length=100, verbose_name="Название меню")
+    title = models.CharField(max_length=100, verbose_name="Название меню", unique=True)
     url = models.CharField(
         max_length=200, verbose_name="url меню", null=True, blank=True
     )
@@ -14,7 +14,7 @@ class Menu(models.Model):
         blank=True,
         default=None,
         related_name="child",
-        verbose_name="Родительское меню"
+        verbose_name="Родительское меню",
     )
 
     class Meta:
@@ -25,13 +25,14 @@ class Menu(models.Model):
         return self.title
 
     def save(self):
-        url = "-".join(self.get_parents() + [self.title])
-        self.url = reverse_lazy("index", kwargs={"url": url})
+        parents = [parent.title for parent in self.get_parents()]
+        url = "-".join(parents + [self.title])
+        self.url = reverse_lazy("menu", kwargs={"url": url})
         super(Menu, self).save()
 
     def get_parents(self):
         if self.parent:
-            return self.parent.get_parents() + [self.parent.title]
+            return self.parent.get_parents() + [self.parent]
         return []
 
     def get_children(self):
