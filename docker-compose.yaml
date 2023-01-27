@@ -1,0 +1,34 @@
+version: '3.3'
+
+x-common-variables: &common-variables
+  POSTGRES_USER: menu
+  POSTGRES_PASSWORD: menu
+  POSTGRES_DB: menu
+  DB_HOST: db
+
+services:
+  web:
+    build: .
+    environment: 
+      *common-variables
+    ports:
+      - "8080:8080"
+    volumes:
+      - staticdata:/usr/src/app/static_files
+    depends_on:
+      - db
+  db:
+    image: postgres:latest
+    environment: 
+      *common-variables
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "sh -c 'pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB'"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+volumes:
+  postgres_data:
+  staticdata:
