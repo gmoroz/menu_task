@@ -4,7 +4,9 @@ from django.urls import reverse_lazy
 
 class Menu(models.Model):
     title = models.CharField(max_length=100, verbose_name="Название меню")
-    url = models.CharField(max_length=200, verbose_name="url меню")
+    url = models.CharField(
+        max_length=200, verbose_name="url меню", null=True, blank=True
+    )
     parent = models.ForeignKey(
         "self",
         on_delete=models.CASCADE,
@@ -22,8 +24,7 @@ class Menu(models.Model):
         return self.title
 
     def save(self):
-        url = "-".join(self.get_parents()) + self.title
-        self.url = reverse_lazy("index", kwargs={"url": url})
+        self.url = "-".join(self.get_parents()) + self.title
         super(Menu, self).save()
 
     def get_parents(self):
