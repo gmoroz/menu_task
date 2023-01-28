@@ -8,3 +8,11 @@
 
     login: user
     password: 123
+
+После добавления меню через админку, нужно добавить строчку в menu.html:
+
+    {% draw_menu 'menu name' %}
+
+И пересобрать docker контейнер
+
+    docker-compose up --build
