@@ -8,4 +8,3 @@
 
     login: user
     password: 123
-латиница через _
