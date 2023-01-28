@@ -2,10 +2,10 @@
 
     docker-compose up
 
-[Установка docker](https://docs.docker.com/engine/install/)
-[Установка docker-compose](https://docs.docker.com/compose/install/)
+приложение будет доступно по адресу localhost:8080
 
 Данные для входа в админку:
 
     login: user
     password: 123
+латиница через _

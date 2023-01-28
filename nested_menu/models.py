@@ -1,6 +1,8 @@
 from django.db import models
 from django.urls import reverse_lazy
 
+from .utils import title_to_url
+
 
 class Menu(models.Model):
     title = models.CharField(max_length=100, verbose_name="Название меню", unique=True)
@@ -26,7 +28,7 @@ class Menu(models.Model):
 
     def save(self):
         parents = [parent.title.lower() for parent in self.get_parents()]
-        url = "-".join(parents + [self.title.lower()])
+        url = "-".join(parents + [title_to_url(self.title.lower())])
         self.url = reverse_lazy("menu", kwargs={"url": url})
         super(Menu, self).save()
 

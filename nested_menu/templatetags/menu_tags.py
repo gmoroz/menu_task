@@ -29,4 +29,5 @@ def draw_children_menu(context, menu_id):
 
 @register.filter
 def get_hyphens(string, menu):
+    """Данная функция помогает улучшить отображение вложенных объектов"""
     return string * len(menu.get_parents())
